@@ -1,0 +1,55 @@
+.mainBtn {
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  gap: 20px;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: all 0.2s ease;
+  height: 48px;
+  padding: 0px 24px;
+  background-color: var(--red-color);
+  color: white;
+}
+.mainBtn svg,
+.inverseBtn svg {
+  align-self: center !important;
+}
+.mainBtn:hover {
+  background-color: transparent;
+  color: var(--red-color);
+  border-color: var(--red-color);
+}
+.inverseBtn {
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  gap: 20px;
+  border: 2px solid var(--red-color);
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: all 0.2s ease;
+  height: 48px;
+  padding: 0px 24px;
+  background-color: transparent;
+  color: var(--red-color);
+}
+.inverseBtn:hover {
+  background-color: var(--red-color);
+  color: white;
+}

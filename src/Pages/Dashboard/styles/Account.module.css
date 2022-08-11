@@ -1,0 +1,78 @@
+.account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+}
+.account h1 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.cardDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  width: 100%;
+  gap: 20px;
+}
+.dashCard {
+  width: 100%;
+  background-color: var(--black-color);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  color: white;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: -1px 0 3px 0 var(--black-color), 1px 1px 3px 0 var(--black-color);
+  padding: 20px;
+}
+.dashCard p {
+  color: #4ed047;
+  font-size: 30px;
+  font-weight: 700;
+}
+.dashCard:hover {
+  box-shadow: 1px 1px 20px 0 var(--black-color),
+    1px 1px 12px 0 var(--black-color);
+}
+.cardDiv .dashCard:last-child {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.dashCard h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+}
+.dashCard h3 span {
+  font-weight: 500;
+  margin-right: 10px;
+}
+.dashCard h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 550px) {
+  .cardDiv {
+    grid-template-columns: 1fr;
+  }
+  .cardDiv .dashCard:last-child {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .account h1 {
+    margin-bottom: 20px;
+  }
+  .account {
+    padding-top: 40px;
+  }
+}
